@@ -1,0 +1,84 @@
+
+
+============================== 2023-04-16 03:54:20.756856 | 9e3c95f3-0b14-473d-91ee-fd94f9f3dca7 ==============================
+[0m03:54:20.756856 [info ] [MainThread]: Running with dbt=1.4.5
+[0m03:54:20.758497 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'demo-dbt-project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:54:20.758832 [debug] [MainThread]: Tracking: tracking
+[0m03:54:20.765024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34d97f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34defbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34defc10>]}
+[0m03:54:20.765514 [info ] [MainThread]: Creating dbt configuration folder at /home/vscode/.dbt
+[0m03:56:40.826315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34defb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34def850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a34defc10>]}
+[0m03:56:40.827162 [debug] [MainThread]: Flushing usage events
+[0m03:56:40.960678 [error] [MainThread]: Encountered an error:
+
+[0m03:56:40.962593 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-16 03:56:57.120447 | 424490b5-5e90-41e1-8a03-b2aaaed03b71 ==============================
+[0m03:56:57.120447 [info ] [MainThread]: Running with dbt=1.4.5
+[0m03:56:57.122125 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'my-dbt-project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:56:57.122517 [debug] [MainThread]: Tracking: tracking
+[0m03:56:57.127762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f094039bd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09403f3ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09403f3b80>]}
+[0m03:57:11.908675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09403f3b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09403f3a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09403f38e0>]}
+[0m03:57:11.909317 [debug] [MainThread]: Flushing usage events
+[0m03:57:11.989824 [error] [MainThread]: Encountered an error:
+
+[0m03:57:11.991700 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-16 03:57:17.229289 | 3ea63389-af99-4d3b-82a6-8242ab5eca99 ==============================
+[0m03:57:17.229289 [info ] [MainThread]: Running with dbt=1.4.5
+[0m03:57:17.230937 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:57:17.231346 [debug] [MainThread]: Tracking: tracking
+[0m03:57:17.236300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034af7ff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034ab03c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034ab03b20>]}
+[0m03:57:40.512923 [debug] [MainThread]: Starter project path: /home/vscode/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m03:59:03.239622 [info ] [MainThread]: Profile my_dbt_project written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m03:59:03.240741 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m03:59:03.241866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034ab03c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034929cee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f034929e320>]}
+[0m03:59:03.242481 [debug] [MainThread]: Flushing usage events
