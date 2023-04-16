@@ -7,5 +7,8 @@ select
 from `analytics-engineers-club.coffee_shop.customers` as customers
 left join `analytics-engineers-club.coffee_shop.orders` as orders
   on customers.id = orders.customer_id
-group by 1,2,3
-order by 4
+group by 
+    customer_id,
+    customer_name,
+    customer_email
+order by first_order_at
